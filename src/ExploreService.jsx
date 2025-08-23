@@ -126,11 +126,6 @@ const ExploreService = () => {
           </div>
         ))}
       </div>
-
-      <h2 className="section-heading">
-        Our Awards
-        <span className="underline" />
-      </h2>
      
     </section>
   );
