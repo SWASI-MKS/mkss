@@ -1,7 +1,10 @@
 import React, { useEffect } from "react";
-
+import ImageWithOverlay from "./ImageWithOverlay"; 
 import "./Surveying.css";
-import CP from "./CP.png"; // same image used
+import CP from "./CP.png"; 
+import land_survey from "./land_survey.png";
+import surveyandseperation from "./surveyandseperation.png";
+
 
 const LandSurveyingServices = () => {
   useEffect(() => { window.scrollTo(0, 0); }, []);
@@ -9,32 +12,27 @@ const LandSurveyingServices = () => {
   return (
     <section className="vaastu-section">
       <div className="vaastu-top">
-        <h2>Land Surveying & Mapping Services</h2>
-        <p>We provide accurate and reliable land surveying solutions to support construction, design, and legal compliance.</p>
+        <h2>Land Surveying Services</h2>
+        <p>
+          We provide accurate and reliable land surveying solutions to support
+          construction, design, and legal compliance.
+        </p>
       </div>
 
       <div className="examples-container">
         <div className="cards-container">
           <div className="card">
-            <img src={CP} alt="Topographical Survey" />
-            <h3>Topographical Survey</h3>
-            <p>Detailed land mapping for contours, features, and elevation profiles.</p>
+            <ImageWithOverlay src={land_survey} alt="Topographical Survey" />
+            <h3>Land Survey</h3>
+            <p>Precise Land Surveys for Accurate Boundaries and Smart Planning.</p>
           </div>
           <div className="card">
-            <img src={CP} alt="Boundary Survey" />
-            <h3>Boundary Survey</h3>
+            <ImageWithOverlay src={surveyandseperation} alt="Boundary Survey" />
+            <h3>Survey and Plot Seperation</h3>
             <p>Precise boundary demarcation for legal and construction purposes.</p>
           </div>
-          <div className="card">
-            <img src={CP} alt="Construction Layout" />
-            <h3>Construction Layout</h3>
-            <p>Accurate site marking and alignment for buildings and infrastructure.</p>
-          </div>
-          <div className="card">
-            <img src={CP} alt="GIS & Mapping" />
-            <h3>GIS & Mapping</h3>
-            <p>Advanced mapping solutions integrated with Geographic Information Systems.</p>
-          </div>
+
+          
         </div>
       </div>
 

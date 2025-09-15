@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./VaastuPlan.css";
+import ImageWithOverlay from "./ImageWithOverlay"; 
 import CP from "./CP.png";
 
 const GovernmentApproval = () => {
@@ -8,31 +9,31 @@ const GovernmentApproval = () => {
   return (
     <section className="vaastu-section">
       <div className="vaastu-top">
-        <h2>Government Plot Approval Assistance</h2>
+        <h2>Building Plan Approval & Appeal Plan</h2>
         <p>We assist in obtaining government approvals for your land, ensuring compliance with legal and municipal standards.</p>
       </div>
 
       <div className="examples-container">
         <div className="cards-container">
           <div className="card">
-            <img src={CP} alt="DTCP Approvals" />
+            <ImageWithOverlay src={CP} alt="Local Body Approvals (Residential)" />
+            <h3>Local Body Approvals (Residential)</h3>
+            <p>Seamless permits to build your dream home hassle-free.</p>
+          </div>
+          <div className="card">
+            <ImageWithOverlay src={CP} alt="Local Body Approvals (Commercial)" />
+            <h3>Local Body Approvals (Commercial)</h3>
+            <p>Fast-track clearances to power your business spaces.</p>
+          </div>
+          <div className="card">
+            <ImageWithOverlay src={CP} alt="Appeal Plan" />
+            <h3>Appeal Plan</h3>
+            <p>Revised approvals made simple – turning rejections into clearances.</p>
+          </div>
+           <div className="card">
+            <ImageWithOverlay src={CP} alt="DTCP Approvals" />
             <h3>DTCP Approvals</h3>
             <p>Guidance in securing Directorate of Town and Country Planning approvals.</p>
-          </div>
-          <div className="card">
-            <img src={CP} alt="Local Body Approvals" />
-            <h3>Local Body Approvals</h3>
-            <p>Support for municipal or panchayat approval processes.</p>
-          </div>
-          <div className="card">
-            <img src={CP} alt="Zoning & Land Use" />
-            <h3>Zoning & Land Use</h3>
-            <p>Assistance in aligning land use with government zoning rules.</p>
-          </div>
-          <div className="card">
-            <img src={CP} alt="Submission & Follow-up" />
-            <h3>Submission & Follow-up</h3>
-            <p>End-to-end handling of application submission and approvals.</p>
           </div>
         </div>
       </div>

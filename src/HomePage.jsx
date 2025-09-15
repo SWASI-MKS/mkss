@@ -38,7 +38,7 @@ function StatsSection() {
           <p>Students Trained</p>
         </div>
         <div className="stat-box">
-          <h3>{inView && <CountUp start={0} end={700} suffix="+" duration={3.0} delay={0.5} />}</h3>
+          <h3>{inView && <CountUp start={0} end={560} suffix="+" duration={3.0} delay={0.5} />}</h3>
           <p>Delivered Projects</p>
         </div>
         <div className="stat-box">
@@ -54,7 +54,7 @@ function GallerySection() {
   const images = [aw2, aw1, aw4, aw3, aw5];
   return (
     <section className="gallery-section">
-      <h2>Awards</h2>
+      <h2 style={{ color: "#0000FF", fontSize: "38px", fontWeight: "bold" }}>Awards</h2>
       <div className="gallery-grid">
         {images.map((src, index) => (
           <div className="gallery-item" key={index}>
@@ -105,14 +105,15 @@ function HomePage() {
       </nav>
 
       <div className="video-container">
-        <video className="hero-video" src={villaVideo} autoPlay loop muted playsInline />
+        <video className="hero-video" src={villaVideo} autoPlay loop muted playsInline style={{ width: '100vw', height: '100vh', objectFit: 'cover' }} />
       </div>
 
       <div className="main-content">
         <StatsSection />
 
         <section id="about" className="about-section">
-          <h2>About Us</h2>
+          <h2 style={{ color: "#0000FF" }}>About Us</h2>
+
           <p>
             Welcome to <strong>MKS CONSULTANT</strong>, your trusted gateway to the world of <strong>Civil Engineering</strong>!
             We are a passionate collective of engineers and innovators dedicated to shaping a smarter, more resilient, and sustainable future.
@@ -131,7 +132,7 @@ function HomePage() {
         <GallerySection />
 
         <section className="why-mks-section">
-          <h2>Why MKS CONSULTANT Stands Above the Rest</h2>
+          <h2 style={{ color: "#0000FF", fontSize: "38px", fontWeight: "bold" }}>WHY MKS CONSULTANT STANDS ABOVE THE REST</h2>
           <p>
             Since its inception in 2012, <strong>MKS CONSULTANT</strong> has been more than just a civil engineering firm — 
             it has been a symbol of integrity, innovation, and impact. What sets us apart is not just our mastery of 

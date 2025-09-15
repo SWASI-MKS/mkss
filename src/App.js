@@ -18,14 +18,26 @@
   import ArchitecturalDrawings from './ArchitecturalDrawings';
   import ConstructionWorkingDrawings from './ConstructionWorkingDrawings';
   import FloorPlans3D from './FloorPlans3D';
-  import ElevationInteriorViews from './ElevationInteriorViews';
+  import ElectricalLayout from './ElectricalLayoutPlans';
+  import SectionElevation from './SectionElevations';
+  import DInterior from './DInterior.js';
+  
 
-  // Services - Engineering Design & Detailing
+  // Services - 
   import StructuralDesignDetailing from './StructuralDesignDetailing';
-  import StructuralElectricalDrawings from './StructuralElectricalDrawings';
-  import PlumbingLayoutDrawings from './PlumbingLayoutDrawings';
-  import ElectricalLayoutPlans from './ElectricalLayoutPlans';
-  import SectionalDetailDrawings from './SectionalDetailDrawings';
+  import CclDrawing from './CclDrawing';
+  import WorkLayout from './WorkLayout';
+  import RcSchedule from './RcSchedule';
+  import FootingRcDetails from './FootingRcDetails';
+  import ColumnRcDetails from './ColumnRcDetails';
+  import BeamLayout from './BeamLayout';
+  import StaircaseRcDetails from './StairCaseRcDet.js';
+  import RcDetails from './RcDetails';
+  import Layout from './Layout';
+  import SlabRcDetails from './SlabRcDetails';
+  import BeamRcDetails from './BeamRcDetails';
+  import RC from './RC';
+  import BBS from './BBS';   
 
   // Services - Estimation & Financial
   import CostEstimationServices from './CostEstimationServices';
@@ -33,12 +45,16 @@
   import BankLoanAssistance from './BankLoanAssistance';
 
   import InternshipOpportunities from './InternshipOpportunities';
+  import CadTraining from './CadTraining.js';
+  import SiteMeasurements from './SiteMeasurements';
+  import LispIntro from './LispIntro';
 
   import ClientOwnedLand from "./ClientOwnedLand";
   import RCCSteelStructures from "./RCCSteelStructures";
   import PEBDesignDetailing from "./PEBDesignDetailing";
   import StaircaseFabrication from "./StaircaseFabrication";
   import ElectricalPlumbingInstallations from "./ElectricalPlumbingInstallations";
+  import Vetrified from './Vetrified';
   import PaintingWork from "./PaintingWork";
 
   import AmmoniaBlueprints from "./AmmoniaBlueprints";
@@ -69,14 +85,26 @@
           <Route path="/services/architectural-drawings" element={<ArchitecturalDrawings />} />
           <Route path="/services/construction-working-drawings" element={<ConstructionWorkingDrawings />} />
           <Route path="/services/floor-plans-3d" element={<FloorPlans3D />} />
-          <Route path="/services/elevation-interior-views" element={<ElevationInteriorViews />} />
+          <Route path="/services/electrical-layout" element={<ElectricalLayout />} />
+           <Route path="/services/sections-elevations" element={<SectionElevation />} />
+          <Route path="/services/3d-interior" element={<DInterior />} />
 
-          {/* Engineering Design & Detailing Services */}
+          {/*  Services */}
           <Route path="/services/structural-design-detailing" element={<StructuralDesignDetailing />} />
-          <Route path="/services/structural-electrical-drawings" element={<StructuralElectricalDrawings />} />
-          <Route path="/services/plumbing-layout-drawings" element={<PlumbingLayoutDrawings />} />
-          <Route path="/services/electrical-layout-plans" element={<ElectricalLayoutPlans />} />
-          <Route path="/services/sectional-detail-drawings" element={<SectionalDetailDrawings />} />
+          <Route path="/services/ccl-drawing" element={<CclDrawing />} />
+          <Route path="/services/work-layout" element={<WorkLayout />} />
+          <Route path="/services/rc-schedule" element={<RcSchedule />} />
+          <Route path="/services/footing-rc-details" element={<FootingRcDetails />} />
+          <Route path="/services/column-rc-details" element={<ColumnRcDetails />} />
+          <Route path="/services/beam-layout" element={<BeamLayout />} />
+          <Route path="/services/staircase-rc-details" element={<stairCaseRcDet />} />
+          <Route path="/services/rc-details" element={<RcDetails />} />
+          <Route path="/services/layout" element={<Layout />} />
+          <Route path="/services/slab-rc-details" element={<SlabRcDetails />} />
+          <Route path="/services/beam-rc-details" element={<BeamRcDetails />} />
+          <Route path="/services/rc" element={<RC />} />
+          <Route path="/services/bbs" element={<BBS />} />
+
 
           {/* Estimation & Financial Services */}
           <Route path="/services/cost-estimation" element={<CostEstimationServices />} />
@@ -84,12 +112,16 @@
           <Route path="/services/bank-loan-assistance" element={<BankLoanAssistance />} />
 
           <Route path="/services/education/internship" element={<InternshipOpportunities />} />
+          <Route path="/services/education/cad-training" element={<CadTraining />} />
+          <Route path="/services/education/sitemeasurement-draft" element={<SiteMeasurements />} />
+          <Route path="/services/education/lisp-intro" element={<LispIntro />} />
 
           <Route path="/services/construction/client-land" element={<ClientOwnedLand />} />
           <Route path="/services/construction/rcc-steel" element={<RCCSteelStructures />} />
           <Route path="/services/construction/peb" element={<PEBDesignDetailing />} />
           <Route path="/services/construction/staircase" element={<StaircaseFabrication />} />
           <Route path="/services/construction/electrical-plumbing" element={<ElectricalPlumbingInstallations />} />
+          <Route path="/services/construction/fixing" element={<Vetrified />} />
           <Route path="/services/construction/painting" element={<PaintingWork />} />
 
           <Route path="/services/inspection/ammonia" element={<AmmoniaBlueprints />} />
